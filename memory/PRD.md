@@ -26,16 +26,20 @@ User provided a static HTML landing page for "Nagpal's House of Beauty", a Delhi
 - Slow editorial brass-outline marquee
 - Sticky glassmorphism header: CAPS brand, products dropdown, mobile menu, Enquire Now CTA
 - Partners logo wall (6 real client names: VLCC, Affinity, Head Masters, Lemon Tree, Marriot, Looks)
-- All-categories bento grid (5 categories, real salon photography; cards scroll to Products)
+- Categories grid (6 categories incl. new Spa Furniture; staggered 3-col layout) — each card opens its own category page at /category/:id
+- Category pages: banner with masked image reveal, product grid (5-6 products per category, 31 total, each with WhatsApp enquiry link), bulk-quote CTA band, back-to-categories
+- Products dropdown in nav navigates directly to each category page; nav anchors work from any route
+- Best Sellers / standalone products section REMOVED per user request (products now live inside category pages)
 - Best sellers grid (6 products, WhatsApp enquiry each)
 - Numbered manifesto About chapters (01 Delhi Atelier / 02 Twelve-Hour Days / 03 Pan-India White-Glove)
 - Oversized Instagram section with 6-image grid + follow button
 - Centered oversized brand header (NAGPAL'S HOUSE OF BEAUTY in caps, nav below)
 
 ## Removed per user request (2026-07-08)
-- Rotating category-product selector ("Find the perfect piece") — component kept at /app/frontend/src/components/RotatingSelector.jsx, unmounted
-- Brown-toned gallery ("Material & finish") — component kept at /app/frontend/src/components/Gallery.jsx, unmounted
+- Rotating category-product selector ("Find the perfect piece") — component deleted
+- Brown-toned gallery ("Material & finish") — component deleted
 - Hero "Ask about bulk orders" link
+- Standalone Best Sellers products section — replaced by per-category product pages
 - Contact band with contact list + WhatsApp CTA; floating WhatsApp bubble; footer
 - All imagery verified live; backwash/vanity photos validated for relevance
 

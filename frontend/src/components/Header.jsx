@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronDown, Menu, Phone, X } from "lucide-react";
 import { CATEGORIES, CONTACT, scrollToId, waLink } from "../data/content";
@@ -6,7 +7,7 @@ import { CATEGORIES, CONTACT, scrollToId, waLink } from "../data/content";
 const NAV = [
   { label: "Home", target: "#home" },
   { label: "Categories", target: "#all-categories" },
-  { label: "Products", target: "#products", dropdown: true },
+  { label: "Products", target: "#all-categories", dropdown: true },
   { label: "About", target: "#about" },
   { label: "Contact", target: "#contact" },
 ];
@@ -14,6 +15,8 @@ const NAV = [
 export const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -23,7 +26,12 @@ export const Header = () => {
 
   const go = (target) => {
     setOpen(false);
-    scrollToId(target);
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(() => scrollToId(target), 500);
+    } else {
+      scrollToId(target);
+    }
   };
 
   return (
@@ -62,7 +70,7 @@ export const Header = () => {
                   <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                     <div className="bg-[#141B16] border border-[#B4863C]/25 min-w-[220px] py-2 shadow-2xl shadow-black/50">
                       {CATEGORIES.map((c) => (
-                        <button key={c.id} onClick={() => go("#all-categories")} data-testid={`nav-dropdown-${c.id}`}
+                        <button key={c.id} onClick={() => navigate(`/category/${c.id}`)} data-testid={`nav-dropdown-${c.id}`}
                           className="block w-full text-left px-5 py-2.5 text-[13px] text-[#F5F1E8]/70 hover:text-[#D3AA66] hover:bg-[#1C2B22] transition-colors">
                           {c.name}
                         </button>

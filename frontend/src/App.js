@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Lenis from "lenis";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { MessageCircle } from "lucide-react";
 import "@/App.css";
 import { Header } from "./components/Header";
@@ -7,11 +8,23 @@ import { Hero } from "./components/Hero";
 import { Marquee } from "./components/Marquee";
 import { Partners } from "./components/Partners";
 import { Categories } from "./components/Categories";
-import { BestSellers } from "./components/BestSellers";
 import { Manifesto } from "./components/Manifesto";
 import { InstagramSection } from "./components/InstagramSection";
 import { Contact } from "./components/Contact";
+import CategoryPage from "./components/CategoryPage";
 import { waLink } from "./data/content";
+
+const Home = () => (
+  <main>
+    <Hero />
+    <Marquee />
+    <Partners />
+    <Categories />
+    <Manifesto />
+    <InstagramSection />
+    <Contact />
+  </main>
+);
 
 function App() {
   useEffect(() => {
@@ -32,17 +45,13 @@ function App() {
 
   return (
     <div className="grain bg-[#0F1411] min-h-screen" data-testid="app-root">
-      <Header />
-      <main>
-        <Hero />
-        <Marquee />
-        <Partners />
-        <Categories />
-        <BestSellers />
-        <Manifesto />
-        <InstagramSection />
-        <Contact />
-      </main>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/category/:categoryId" element={<CategoryPage />} />
+        </Routes>
+      </BrowserRouter>
       <a href={waLink("Hello Nagpal's House of Beauty, I have a question about salon furniture.")}
         target="_blank" rel="noreferrer" data-testid="floating-whatsapp-button"
         aria-label="Chat on WhatsApp"
