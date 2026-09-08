@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { ArrowDown, ArrowUpRight } from "lucide-react";
-import { HERO_IMAGE, scrollToId, waLink } from "../data/content";
+import { ArrowDown } from "lucide-react";
+import { HERO_IMAGE, scrollToId } from "../data/content";
 
 const LINES = ["Furniture that", "shapes a salon's", "first impression."];
 
@@ -61,12 +61,6 @@ export const Hero = () => {
             Explore Now
             <ArrowDown size={16} className="group-hover:translate-y-1 transition-transform" />
           </button>
-          <a href={waLink("Hello Nagpal's House of Beauty, I'm furnishing a salon and would like to talk.")}
-            target="_blank" rel="noreferrer" data-testid="hero-whatsapp-link"
-            className="group flex items-center gap-2 text-sm text-[#F5F1E8]/85 border-b border-[#B4863C] pb-1 hover:text-[#D3AA66] transition-colors">
-            Ask about bulk orders
-            <ArrowUpRight size={15} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-          </a>
         </motion.div>
       </motion.div>
 

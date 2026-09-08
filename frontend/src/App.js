@@ -7,10 +7,8 @@ import { Hero } from "./components/Hero";
 import { Marquee } from "./components/Marquee";
 import { Partners } from "./components/Partners";
 import { Categories } from "./components/Categories";
-import { RotatingSelector } from "./components/RotatingSelector";
 import { BestSellers } from "./components/BestSellers";
 import { Manifesto } from "./components/Manifesto";
-import { Gallery } from "./components/Gallery";
 import { InstagramSection } from "./components/InstagramSection";
 import { Contact } from "./components/Contact";
 import { waLink } from "./data/content";
@@ -40,10 +38,8 @@ function App() {
         <Marquee />
         <Partners />
         <Categories />
-        <RotatingSelector />
         <BestSellers />
         <Manifesto />
-        <Gallery />
         <InstagramSection />
         <Contact />
       </main>

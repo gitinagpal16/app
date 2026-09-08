@@ -16,7 +16,7 @@ export const Categories = () => (
         {CATEGORIES.map((cat, i) => (
           <Reveal key={cat.id} delay={i * 0.07} className={i === 0 ? "sm:col-span-2 sm:row-span-2" : ""}>
             <button
-              onClick={() => scrollToId("#selector")}
+              onClick={() => scrollToId("#products")}
               data-testid={`category-card-${cat.id}`}
               className="relative w-full h-full group overflow-hidden text-left border border-[#B4863C]/15 block"
             >

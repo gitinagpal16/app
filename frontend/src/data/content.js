@@ -104,8 +104,8 @@ export const BEST_SELLERS = [
 ];
 
 export const PARTNERS = [
-  "VLCC", "Looks Salon", "Affinity", "Toni & Guy India",
-  "BBlunt", "Jawed Habib", "Geetanjali Salon", "Naturals",
+  "VLCC", "Affinity", "Head Masters",
+  "Lemon Tree", "Marriot", "Looks",
 ];
 
 export const GALLERY = [

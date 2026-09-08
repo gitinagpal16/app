@@ -25,13 +25,17 @@ User provided a static HTML landing page for "Nagpal's House of Beauty", a Delhi
 - Kinetic hero: full-bleed barbershop photo with scroll parallax + zoom, masked line-by-line headline reveal, Explore Now (Lenis smooth scroll to categories), floating scroll cue
 - Slow editorial brass-outline marquee
 - Sticky glassmorphism header: CAPS brand, products dropdown, mobile menu, Enquire Now CTA
-- Partners logo wall (8 sample salon-chain names — PLACEHOLDER)
-- All-categories bento grid (5 categories, real salon photography)
-- Auto-rotating category-product selector (4.5s rotation, pause on hover, tab click, per-product WhatsApp enquiry)
+- Partners logo wall (6 real client names: VLCC, Affinity, Head Masters, Lemon Tree, Marriot, Looks)
+- All-categories bento grid (5 categories, real salon photography; cards scroll to Products)
 - Best sellers grid (6 products, WhatsApp enquiry each)
 - Numbered manifesto About chapters (01 Delhi Atelier / 02 Twelve-Hour Days / 03 Pan-India White-Glove)
-- Warm brown-toned editorial gallery mosaic
 - Oversized Instagram section with 6-image grid + follow button
+- Centered oversized brand header (NAGPAL'S HOUSE OF BEAUTY in caps, nav below)
+
+## Removed per user request (2026-07-08)
+- Rotating category-product selector ("Find the perfect piece") — component kept at /app/frontend/src/components/RotatingSelector.jsx, unmounted
+- Brown-toned gallery ("Material & finish") — component kept at /app/frontend/src/components/Gallery.jsx, unmounted
+- Hero "Ask about bulk orders" link
 - Contact band with contact list + WhatsApp CTA; floating WhatsApp bubble; footer
 - All imagery verified live; backwash/vanity photos validated for relevance
 

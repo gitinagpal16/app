@@ -41,17 +41,17 @@ export const Header = () => {
       <header className={`sticky top-0 z-50 transition-all duration-500 border-b ${
         scrolled ? "bg-[#0F1411]/85 backdrop-blur-xl border-[#B4863C]/25 py-3" : "bg-transparent border-transparent py-5"
       }`}>
-        <div className="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between gap-6">
-          <button onClick={() => go("#home")} data-testid="nav-brand-logo" className="text-left group">
-            <span className="font-display font-extrabold uppercase tracking-[0.14em] text-[#F5F1E8] text-base sm:text-xl leading-none group-hover:text-[#D3AA66] transition-colors">
-              Nagpal's
+        <div className="relative max-w-7xl mx-auto px-5 sm:px-8 flex flex-col items-center">
+          <button onClick={() => go("#home")} data-testid="nav-brand-logo" className="text-center group">
+            <span className={`font-display font-extrabold uppercase tracking-[0.1em] text-[#F5F1E8] leading-none whitespace-nowrap group-hover:text-[#D3AA66] transition-all duration-500 ${scrolled ? "text-lg sm:text-2xl" : "text-2xl sm:text-4xl"}`}>
+              Nagpal's House of Beauty
             </span>
-            <span className="block text-[9px] sm:text-[10px] tracking-[0.42em] uppercase text-[#B4863C] mt-1">
-              House of Beauty
+            <span className="block text-[9px] sm:text-[11px] tracking-[0.5em] uppercase text-[#B4863C] mt-2">
+              Salon Furniture
             </span>
           </button>
 
-          <nav className="hidden lg:flex items-center gap-8 text-sm" data-testid="desktop-nav">
+          <nav className="hidden lg:flex items-center gap-8 text-sm mt-4" data-testid="desktop-nav">
             {NAV.map((item) =>
               item.dropdown ? (
                 <div key={item.label} className="relative group">
@@ -84,7 +84,7 @@ export const Header = () => {
             </a>
           </nav>
 
-          <button className="lg:hidden text-[#F5F1E8]" onClick={() => setOpen(!open)} data-testid="mobile-menu-toggle" aria-label="Menu">
+          <button className="lg:hidden absolute right-5 top-5 text-[#F5F1E8]" onClick={() => setOpen(!open)} data-testid="mobile-menu-toggle" aria-label="Menu">
             {open ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
