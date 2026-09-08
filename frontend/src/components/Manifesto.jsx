@@ -1,22 +1,31 @@
+import { Award, BadgeCheck, IndianRupee, PencilRuler, Sparkles } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { scrollToId } from "../data/content";
 
 const CHAPTERS = [
   {
     num: "01",
-    title: "The Delhi Atelier",
-    body: "Nagpal's House of Beauty began on the workshop floors of Delhi's furniture district. Every chair, basin and station we supply is chosen the way a salon owner would — sat on, leaned back in, and judged on whether it survives a busy Saturday.",
+    title: "Manufactured in Sonipat",
+    body: "We are manufacturers first. Our own production unit in Sonipat, Haryana is run by a team that lives and breathes salon furniture — 12 years of hands-on manufacturing experience, backed by more than 25 years of importing and selling salon furniture across India.",
   },
   {
     num: "02",
-    title: "Built for Twelve-Hour Days",
-    body: "Salon furniture isn't decoration; it's equipment. Hydraulic pumps rated for thousands of lifts, ceramic basins that resist chemical wear, upholstery that wipes clean between clients — we stock pieces that hold up to daily commercial use.",
+    title: "Quality Over Quantity",
+    body: "We believe in quality rather than quantity. Every chair, basin and bed is built for extreme comfort and checked piece by piece before it leaves our unit — because salon furniture isn't decoration, it's equipment your clients sit in every single day.",
   },
   {
     num: "03",
     title: "Pan-India, White-Glove",
-    body: "From a single styling chair to a full salon fit-out, we deliver and install across India. Bulk and made-to-order runs are our speciality — tell us the floor plan, and we'll furnish it.",
+    body: "From a single styling chair to a full salon fit-out, we deliver and install across India. Custom sizes, finishes and bulk runs are our speciality — tell us the floor plan, and we'll furnish it.",
   },
+];
+
+const CREDENTIALS = [
+  { icon: Award, label: "ISO 9001:2000 Certified" },
+  { icon: BadgeCheck, label: "GMP Certified Company" },
+  { icon: PencilRuler, label: "Customizable Designs" },
+  { icon: IndianRupee, label: "Factory Pricing — Price Guarantee" },
+  { icon: Sparkles, label: "Extreme Comfort" },
 ];
 
 export const Manifesto = () => (
@@ -25,8 +34,8 @@ export const Manifesto = () => (
       <Reveal className="mb-14 flex items-end justify-between gap-6 flex-wrap">
         <div>
           <p className="text-[11px] uppercase tracking-[0.35em] text-[#B4863C] font-semibold mb-3">About us</p>
-          <h2 className="font-display font-bold uppercase tracking-tight text-2xl sm:text-4xl text-[#F5F1E8] max-w-lg leading-tight">
-            A house built on working furniture
+          <h2 className="font-display font-bold uppercase tracking-tight text-2xl sm:text-4xl text-[#F5F1E8] max-w-xl leading-tight">
+            Manufacturers first. Quality always.
           </h2>
         </div>
         <button onClick={() => scrollToId("#contact")} data-testid="about-contact-link"
@@ -47,6 +56,21 @@ export const Manifesto = () => (
           </Reveal>
         ))}
       </div>
+
+      <Reveal delay={0.1}>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 border-t border-l border-[#B4863C]/15 mt-4"
+          data-testid="credentials-grid">
+          {CREDENTIALS.map((c, i) => (
+            <div key={c.label} data-testid={`credential-${i}`}
+              className="border-r border-b border-[#B4863C]/15 px-5 py-7 flex flex-col items-center text-center gap-3 hover:bg-[#1C2B22]/70 transition-colors duration-300">
+              <c.icon size={22} className="text-[#B4863C]" strokeWidth={1.5} />
+              <span className="text-[11px] sm:text-xs uppercase tracking-[0.18em] text-[#F5F1E8]/70 leading-relaxed">
+                {c.label}
+              </span>
+            </div>
+          ))}
+        </div>
+      </Reveal>
     </div>
   </section>
 );

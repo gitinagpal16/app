@@ -26,7 +26,7 @@ export const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-[11px] sm:text-xs uppercase tracking-[0.35em] text-[#D3AA66] font-semibold mb-6"
           data-testid="hero-eyebrow">
-          Salon furniture · Delhi · Pan-India
+          Salon furniture manufacturers · Sonipat · Pan-India
         </motion.p>
 
         <h1 className="font-display font-extrabold uppercase leading-[1.02] tracking-tight text-[#F5F1E8] text-4xl sm:text-6xl lg:text-7xl max-w-5xl" data-testid="hero-headline">

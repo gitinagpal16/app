@@ -21,7 +21,7 @@ export const CONTACT = {
   address: "Kirti Nagar Furniture District, New Delhi",
 };
 
-export const HERO_IMAGE = img("1585747860715-2ba37e788b70", 2400);
+export const HERO_IMAGE = "/images/hero-salon.jpg";
 
 export const CATEGORIES = [
   {

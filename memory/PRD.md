@@ -21,6 +21,12 @@ User provided a static HTML landing page for "Nagpal's House of Beauty", a Delhi
 - All enquiries via WhatsApp deep links (wa.me with pre-filled text)
 - Brand name always in CAPS
 
+## Implemented (2026-07-08, update 2)
+- Hero now uses the client's own dark barbershop-floor photo (saved locally at /app/frontend/public/images/hero-salon.jpg); hero eyebrow reads "Salon furniture manufacturers · Sonipat · Pan-India"
+- Trust bar strip (after marquee): 1000+ Salons Furnished · Pan-India Delivery & Installation · Custom Bulk & Made-to-Order
+- Testimonials section (#clients): Siya Pant, Ashish Yadav, Soniya Gupta (Premlata quote unused, available)
+- About rewritten as real story: 01 Manufactured in Sonipat (own unit in Sonipat, Haryana; 12 yrs manufacturing, 25+ yrs importing & selling), 02 Quality Over Quantity (extreme comfort), 03 Pan-India White-Glove; plus credentials grid: ISO 9001:2000, GMP Certified, Customizable Designs, Factory Pricing — Price Guarantee, Extreme Comfort
+
 ## Implemented (2026-07-08)
 - Kinetic hero: full-bleed barbershop photo with scroll parallax + zoom, masked line-by-line headline reveal, Explore Now (Lenis smooth scroll to categories), floating scroll cue
 - Slow editorial brass-outline marquee

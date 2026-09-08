@@ -8,6 +8,8 @@ import { Hero } from "./components/Hero";
 import { Marquee } from "./components/Marquee";
 import { Partners } from "./components/Partners";
 import { Categories } from "./components/Categories";
+import { TrustBar } from "./components/TrustBar";
+import { Testimonials } from "./components/Testimonials";
 import { Manifesto } from "./components/Manifesto";
 import { InstagramSection } from "./components/InstagramSection";
 import { Contact } from "./components/Contact";
@@ -18,7 +20,9 @@ const Home = () => (
   <main>
     <Hero />
     <Marquee />
+    <TrustBar />
     <Partners />
+    <Testimonials />
     <Categories />
     <Manifesto />
     <InstagramSection />
