@@ -21,6 +21,9 @@ User provided a static HTML landing page for "Nagpal's House of Beauty", a Delhi
 - All enquiries via WhatsApp deep links (wa.me with pre-filled text)
 - Brand name always in CAPS
 
+## Implemented (2026-07-08, update 5)
+- Instagram section now uses official Instagram embeds (iframe /embed player) for 6 real reels from @nagpalshouseofbeauty — real product reels (pedicure throne, pink styling chair, shampoo unit etc.). Reel IDs in INSTAGRAM_REELS in content.js; swap IDs to change shown posts. Chosen over Graph API live feed (no Meta developer setup needed; reels still clickable through to profile)
+
 ## Implemented (2026-07-08, update 4)
 - Sticky tap-to-call button (mobile-only, stacked above WhatsApp bubble, tel:+918506808606)
 - Google Maps embed in contact section pinpointing the Rohini showroom (keyless embed), with address bar + "Get directions" link, warm-toned filter to match theme

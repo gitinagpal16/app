@@ -1,6 +1,6 @@
 import { Instagram } from "lucide-react";
 import { Reveal } from "./Reveal";
-import { CONTACT, INSTAGRAM_GRID } from "../data/content";
+import { CONTACT, INSTAGRAM_REELS } from "../data/content";
 
 export const InstagramSection = () => (
   <section className="py-20 sm:py-28 bg-[#141B16] border-y border-[#B4863C]/15" data-testid="instagram-section">
@@ -21,17 +21,22 @@ export const InstagramSection = () => (
         </a>
       </Reveal>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-        {INSTAGRAM_GRID.map((src, i) => (
-          <Reveal key={src} delay={i * 0.05}>
-            <a href={CONTACT.instagramUrl} target="_blank" rel="noreferrer" data-testid={`instagram-post-${i}`}
-              className="relative block aspect-square overflow-hidden group border border-[#B4863C]/15">
-              <img src={src} alt={`Instagram post ${i + 1}`}
-                className="w-full h-full object-cover warm-tone transition-transform duration-700 group-hover:scale-110" />
-              <div className="absolute inset-0 bg-[#0F1411]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <Instagram size={22} className="text-[#D3AA66]" />
-              </div>
-            </a>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
+        {INSTAGRAM_REELS.map((id, i) => (
+          <Reveal key={id} delay={(i % 3) * 0.07}>
+            <div data-testid={`instagram-reel-${i}`}
+              className="border border-[#B4863C]/20 bg-[#0F1411] overflow-hidden">
+              <iframe
+                src={`https://www.instagram.com/reel/${id}/embed`}
+                title={`Instagram reel ${i + 1} — Nagpal's House of Beauty`}
+                className="w-full h-[540px] sm:h-[600px] block"
+                frameBorder="0"
+                scrolling="no"
+                loading="lazy"
+                allowFullScreen
+                allow="encrypted-media; clipboard-write"
+              />
+            </div>
           </Reveal>
         ))}
       </div>

@@ -128,11 +128,11 @@ export const GALLERY = [
   { image: img("1512496015851-a90fb38ba796", 1000), label: "Colour & care station" },
 ];
 
-export const INSTAGRAM_GRID = [
-  img("1560066984-138dadb4c035", 800),
-  img("1562322140-8baeececf3df", 800),
-  img("1559599101-f09722fb4948", 800),
-  img("1519699047748-de8e457a634e", 800),
-  img("1595476108010-b4d1f102b1b1", 800),
-  img("1522335789203-aabd1fc54bc9", 800),
+export const INSTAGRAM_REELS = [
+  "DZo7gbhyAVg",
+  "DZrdnyZyixh",
+  "DZw6PqgynG7",
+  "DZ9i_mpy9Dk",
+  "DaNNo7KSxfW",
+  "DaU-SxqyLVN",
 ];
