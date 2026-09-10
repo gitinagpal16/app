@@ -40,7 +40,7 @@ export const Header = () => {
         <div className="max-w-7xl mx-auto px-5 sm:px-8 py-2 flex items-center justify-between gap-4">
           <span className="text-[#F5F1E8]/50">Pan-India delivery · Bulk orders welcome</span>
           <a href={`tel:${CONTACT.phone.replace(/\s/g, "")}`} data-testid="utility-phone-link"
-            className="hidden sm:flex items-center gap-2 text-[#D3AA66] hover:text-[#F5F1E8] transition-colors">
+            className="flex items-center gap-2 text-[#D3AA66] hover:text-[#F5F1E8] transition-colors">
             <Phone size={12} /> {CONTACT.phone}
           </a>
         </div>
@@ -51,7 +51,7 @@ export const Header = () => {
       }`}>
         <div className="relative max-w-7xl mx-auto px-5 sm:px-8 flex flex-col items-center">
           <button onClick={() => go("#home")} data-testid="nav-brand-logo" className="text-center group">
-            <span className={`font-display font-extrabold uppercase tracking-[0.1em] text-[#F5F1E8] leading-none whitespace-nowrap group-hover:text-[#D3AA66] transition-all duration-500 ${scrolled ? "text-lg sm:text-2xl" : "text-2xl sm:text-4xl"}`}>
+            <span className={`font-display font-extrabold uppercase tracking-[0.08em] sm:tracking-[0.1em] text-[#F5F1E8] leading-tight whitespace-normal sm:whitespace-nowrap group-hover:text-[#D3AA66] transition-all duration-500 ${scrolled ? "text-base sm:text-2xl" : "text-xl sm:text-4xl"}`}>
               Nagpal's House of Beauty
             </span>
             <span className="block text-[9px] sm:text-[11px] tracking-[0.5em] uppercase text-[#B4863C] mt-2">

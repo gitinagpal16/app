@@ -14,7 +14,7 @@ export const Partners = () => (
         <p className="text-[#F5F1E8]/50 text-sm max-w-xs">Salon chains and studios across the country furnish their floors with Nagpal's.</p>
       </Reveal>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 border-t border-l border-[#B4863C]/15">
+      <div className="grid grid-cols-2 md:grid-cols-4 border-t border-l border-[#B4863C]/15">
         {PARTNERS.map((name, i) => (
           <Reveal key={name} delay={i * 0.05}>
             <div data-testid={`partner-badge-${i}`}

@@ -1,6 +1,6 @@
 const ITEMS = [
-  "Styling Chairs", "Shampoo Stations", "LED Workstations", "Salon Trolleys",
-  "Pedicure Thrones", "Spa Furniture", "Mirrors & Vanity", "Pan-India Delivery", "Bulk & Made-to-Order",
+  "Salon Chairs", "Shampoo Stations", "LED Workstations", "Salon Trolleys",
+  "Mani-Pedi Stations", "Spa Furniture", "Mirrors & Vanity", "Pan-India Delivery", "Bulk & Made-to-Order",
 ];
 
 export const Marquee = () => (

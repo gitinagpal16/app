@@ -29,7 +29,7 @@ export const Hero = () => {
           Salon furniture manufacturers · Sonipat · Pan-India
         </motion.p>
 
-        <h1 className="font-display font-extrabold uppercase leading-[1.02] tracking-tight text-[#F5F1E8] text-4xl sm:text-6xl lg:text-7xl max-w-5xl" data-testid="hero-headline">
+        <h1 className="font-display font-extrabold uppercase leading-[1.02] tracking-tight text-[#F5F1E8] max-w-5xl" style={{ fontSize: "clamp(1.7rem, 7vw, 4.5rem)" }} data-testid="hero-headline">
           {LINES.map((line, i) => (
             <span key={line} className="mask-line">
               <motion.span

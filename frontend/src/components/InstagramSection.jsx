@@ -9,7 +9,7 @@ export const InstagramSection = () => (
         <p className="text-[11px] uppercase tracking-[0.35em] text-[#B4863C] font-semibold mb-4">On the floor, every week</p>
         <a href={CONTACT.instagramUrl} target="_blank" rel="noreferrer" data-testid="instagram-handle-link"
           className="font-display font-extrabold uppercase tracking-tight text-[#F5F1E8] hover:text-[#D3AA66] transition-colors whitespace-nowrap"
-          style={{ fontSize: "clamp(1.4rem, 3.4vw, 3.25rem)" }}>
+          style={{ fontSize: "clamp(1.05rem, 3.4vw, 3.25rem)" }}>
           {CONTACT.instagram}
         </a>
         <p className="text-[#F5F1E8]/50 text-sm mt-4 max-w-md mx-auto">

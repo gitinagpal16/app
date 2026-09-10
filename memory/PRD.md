@@ -21,6 +21,12 @@ User provided a static HTML landing page for "Nagpal's House of Beauty", a Delhi
 - All enquiries via WhatsApp deep links (wa.me with pre-filled text)
 - Brand name always in CAPS
 
+## Implemented (2026-07-08, update 3)
+- Real contact details live: phone/WhatsApp +91 85068 08606, email nagpalshouseofbeauty@gmail.com, showroom 251, Pocket H-17, near Rohini West Metro Station, Sector 7, Rohini, Delhi 110085
+- Category renames: Styling Chairs → Salon Chairs (id styling-chairs unchanged), Pedicure & Spa → Pedicure & Manicure Station (id pedi-spa unchanged); marquee wording updated to match
+- Partners wall now 8 names: VLCC, Affinity, Head Masters, Lemon Tree, Marriot, Looks, Jawed Habib, Orane (4-col grid restored)
+- Mobile optimization pass: fixed horizontal overflow (marquee track inflated document width — root overflow-x: clip), responsive brand size/wrap in header, hero headline fluid clamp sizing, phone number visible in mobile utility bar, Instagram handle min size reduced; verified at 390×844 (menu, hero, categories, contact)
+
 ## Implemented (2026-07-08, update 2)
 - Hero now uses the client's own dark barbershop-floor photo (saved locally at /app/frontend/public/images/hero-salon.jpg); hero eyebrow reads "Salon furniture manufacturers · Sonipat · Pan-India"
 - Trust bar strip (after marquee): 1000+ Salons Furnished · Pan-India Delivery & Installation · Custom Bulk & Made-to-Order

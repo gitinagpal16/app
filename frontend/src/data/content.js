@@ -1,7 +1,7 @@
 const img = (id, w = 1200) =>
   `https://images.unsplash.com/photo-${id}?q=80&w=${w}&auto=format&fit=crop`;
 
-export const WHATSAPP_NUMBER = "919876543210";
+export const WHATSAPP_NUMBER = "918506808606";
 export const waLink = (text) =>
   `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
 
@@ -13,12 +13,12 @@ export const scrollToId = (selector) => {
 };
 
 export const CONTACT = {
-  phone: "+91 98765 43210",
-  whatsapp: "+91 98765 43210",
-  email: "hello@nagpalshouseofbeauty.in",
+  phone: "+91 85068 08606",
+  whatsapp: "+91 85068 08606",
+  email: "nagpalshouseofbeauty@gmail.com",
   instagram: "@nagpalshouseofbeauty",
   instagramUrl: "https://www.instagram.com/nagpalshouseofbeauty",
-  address: "Kirti Nagar Furniture District, New Delhi",
+  address: "251, Pocket H-17, near Rohini West Metro Station, Sector 7, Rohini, Delhi 110085",
 };
 
 export const HERO_IMAGE = "/images/hero-salon.jpg";
@@ -26,7 +26,7 @@ export const HERO_IMAGE = "/images/hero-salon.jpg";
 export const CATEGORIES = [
   {
     id: "styling-chairs",
-    name: "Styling Chairs",
+    name: "Salon Chairs",
     count: "24 designs",
     desc: "Hydraulic bases, sculpted seating, brass-detailed finishes.",
     image: img("1706629503650-cade709d15e3"),
@@ -54,9 +54,9 @@ export const CATEGORIES = [
   },
   {
     id: "pedi-spa",
-    name: "Pedicure & Spa",
+    name: "Pedicure & Manicure Station",
     count: "9 designs",
-    desc: "Plush thrones and spa beds for long rituals.",
+    desc: "Plush thrones and mani-pedi stations for long rituals.",
     image: img("1585611647522-ce9aebe1a467"),
   },
   {
@@ -115,8 +115,8 @@ export const PRODUCTS_BY_CATEGORY = {
 };
 
 export const PARTNERS = [
-  "VLCC", "Affinity", "Head Masters",
-  "Lemon Tree", "Marriot", "Looks",
+  "VLCC", "Affinity", "Head Masters", "Lemon Tree",
+  "Marriot", "Looks", "Jawed Habib", "Orane",
 ];
 
 export const GALLERY = [
