@@ -47,7 +47,7 @@ export const Header = () => {
       </div>
 
       <header className={`sticky top-0 z-50 transition-all duration-500 border-b ${
-        scrolled ? "bg-[#0F1411]/85 backdrop-blur-xl border-[#B4863C]/25 py-3" : "bg-transparent border-transparent py-5"
+        scrolled ? "bg-[#0F1411]/85 backdrop-blur-xl border-transparent py-3" : "bg-transparent border-transparent py-5"
       }`}>
         <div className="relative max-w-7xl mx-auto px-5 sm:px-8 flex flex-col items-center">
           <button onClick={() => go("#home")} data-testid="nav-brand-logo" className="text-center group">
