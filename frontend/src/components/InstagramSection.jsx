@@ -25,11 +25,12 @@ export const InstagramSection = () => (
         {INSTAGRAM_REELS.map((id, i) => (
           <Reveal key={id} delay={(i % 3) * 0.07}>
             <div data-testid={`instagram-reel-${i}`}
-              className="border border-[#B4863C]/20 bg-[#0F1411] overflow-hidden">
+              className="relative border border-[#B4863C]/20 bg-[#0F1411] overflow-hidden aspect-[4/5]">
               <iframe
                 src={`https://www.instagram.com/reel/${id}/embed`}
                 title={`Instagram reel ${i + 1} — Nagpal's House of Beauty`}
-                className="w-full h-[540px] sm:h-[600px] block"
+                className="absolute left-0 w-full block"
+                style={{ height: "176%", top: "-52px" }}
                 frameBorder="0"
                 scrolling="no"
                 loading="lazy"

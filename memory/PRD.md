@@ -22,7 +22,7 @@ User provided a static HTML landing page for "Nagpal's House of Beauty", a Delhi
 - Brand name always in CAPS
 
 ## Implemented (2026-07-08, update 5)
-- Instagram section now uses official Instagram embeds (iframe /embed player) for 6 real reels from @nagpalshouseofbeauty — real product reels (pedicure throne, pink styling chair, shampoo unit etc.). Reel IDs in INSTAGRAM_REELS in content.js; swap IDs to change shown posts. Chosen over Graph API live feed (no Meta developer setup needed; reels still clickable through to profile)
+- Instagram section now uses official Instagram embeds (iframe /embed player) for 6 real reels from @nagpalshouseofbeauty — clipped via overflow-hidden wrapper (aspect 4/5, iframe 176% height, -52px top offset) so only the video player shows, no white Instagram chrome. Reel IDs in INSTAGRAM_REELS in content.js
 
 ## Implemented (2026-07-08, update 4)
 - Sticky tap-to-call button (mobile-only, stacked above WhatsApp bubble, tel:+918506808606)
