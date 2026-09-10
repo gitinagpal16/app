@@ -107,6 +107,11 @@ body {
   }
 }
 
+/* Google Maps tone */
+.map-tone {
+  filter: grayscale(0.35) sepia(0.12) contrast(0.96);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .marquee-track { animation: none; }
 }

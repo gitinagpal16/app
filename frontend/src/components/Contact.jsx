@@ -13,7 +13,8 @@ const ROWS = [
 export const Contact = () => (
   <>
     <section id="contact" className="py-20 sm:py-28 bg-[#1C2B22]" data-testid="contact-section">
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-[1.2fr_1fr] gap-14">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8">
+        <div className="grid lg:grid-cols-[1.2fr_1fr] gap-14">
         <Reveal>
           <p className="text-[11px] uppercase tracking-[0.35em] text-[#D3AA66] font-semibold mb-4">Contact us</p>
           <h2 className="font-display font-extrabold uppercase tracking-tight text-3xl sm:text-5xl text-[#F5F1E8] leading-[1.05]">
@@ -55,6 +56,28 @@ export const Contact = () => (
               </li>
             ))}
           </ul>
+        </Reveal>
+        </div>
+
+        <Reveal delay={0.15} className="mt-14">
+          <div className="border border-[#B4863C]/25 overflow-hidden" data-testid="map-embed">
+            <iframe
+              title="Nagpal's House of Beauty — showroom map"
+              src="https://www.google.com/maps?q=251%20Pocket%20H-17%20near%20Rohini%20West%20Metro%20Station%20Sector%207%20Rohini%20Delhi%20110085&output=embed"
+              className="w-full h-[320px] sm:h-[420px] map-tone block"
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+            <div className="flex items-center justify-between gap-4 px-5 py-4 bg-[#0F1411] border-t border-[#B4863C]/25">
+              <span className="text-xs text-[#F5F1E8]/50 leading-relaxed">{CONTACT.address}</span>
+              <a href="https://www.google.com/maps/search/?api=1&query=251+Pocket+H-17+near+Rohini+West+Metro+Station+Sector+7+Rohini+Delhi+110085"
+                target="_blank" rel="noreferrer" data-testid="map-directions-link"
+                className="shrink-0 text-xs uppercase tracking-[0.2em] text-[#D3AA66] border-b border-[#B4863C]/50 pb-0.5 hover:text-[#F5F1E8] transition-colors">
+                Get directions
+              </a>
+            </div>
+          </div>
         </Reveal>
       </div>
     </section>

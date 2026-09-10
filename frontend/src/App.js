@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Lenis from "lenis";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, Phone } from "lucide-react";
 import "@/App.css";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
@@ -14,7 +14,7 @@ import { Manifesto } from "./components/Manifesto";
 import { InstagramSection } from "./components/InstagramSection";
 import { Contact } from "./components/Contact";
 import CategoryPage from "./components/CategoryPage";
-import { waLink } from "./data/content";
+import { CONTACT, waLink } from "./data/content";
 
 const Home = () => (
   <main>
@@ -56,12 +56,19 @@ function App() {
           <Route path="/category/:categoryId" element={<CategoryPage />} />
         </Routes>
       </BrowserRouter>
-      <a href={waLink("Hello Nagpal's House of Beauty, I have a question about salon furniture.")}
-        target="_blank" rel="noreferrer" data-testid="floating-whatsapp-button"
-        aria-label="Chat on WhatsApp"
-        className="fixed bottom-6 right-6 z-[80] w-14 h-14 rounded-full bg-[#B4863C] text-[#0F1411] flex items-center justify-center shadow-[0_8px_30px_rgba(180,134,60,0.45)] hover:bg-[#D3AA66] hover:-translate-y-1 transition-all">
-        <MessageCircle size={24} />
-      </a>
+      <div className="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-[80] flex flex-col items-center gap-3">
+        <a href={`tel:${CONTACT.phone.replace(/\s/g, "")}`}
+          data-testid="floating-call-button" aria-label="Call Nagpal's House of Beauty"
+          className="sm:hidden w-12 h-12 rounded-full bg-[#0F1411]/90 backdrop-blur border border-[#B4863C]/60 text-[#D3AA66] flex items-center justify-center shadow-[0_8px_24px_rgba(0,0,0,0.5)] active:scale-95 transition-all">
+          <Phone size={20} />
+        </a>
+        <a href={waLink("Hello Nagpal's House of Beauty, I have a question about salon furniture.")}
+          target="_blank" rel="noreferrer" data-testid="floating-whatsapp-button"
+          aria-label="Chat on WhatsApp"
+          className="w-14 h-14 rounded-full bg-[#B4863C] text-[#0F1411] flex items-center justify-center shadow-[0_8px_30px_rgba(180,134,60,0.45)] hover:bg-[#D3AA66] hover:-translate-y-1 transition-all">
+          <MessageCircle size={24} />
+        </a>
+      </div>
     </div>
   );
 }

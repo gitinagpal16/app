@@ -21,6 +21,10 @@ User provided a static HTML landing page for "Nagpal's House of Beauty", a Delhi
 - All enquiries via WhatsApp deep links (wa.me with pre-filled text)
 - Brand name always in CAPS
 
+## Implemented (2026-07-08, update 4)
+- Sticky tap-to-call button (mobile-only, stacked above WhatsApp bubble, tel:+918506808606)
+- Google Maps embed in contact section pinpointing the Rohini showroom (keyless embed), with address bar + "Get directions" link, warm-toned filter to match theme
+
 ## Implemented (2026-07-08, update 3)
 - Real contact details live: phone/WhatsApp +91 85068 08606, email nagpalshouseofbeauty@gmail.com, showroom 251, Pocket H-17, near Rohini West Metro Station, Sector 7, Rohini, Delhi 110085
 - Category renames: Styling Chairs → Salon Chairs (id styling-chairs unchanged), Pedicure & Spa → Pedicure & Manicure Station (id pedi-spa unchanged); marquee wording updated to match
